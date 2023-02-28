@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização</title>
+    <style>
+        body {
+            background-color: rgb(36, 36, 138);
+            color: pink;
+            font: normal 30pt Arial;
+        }
+        h1 {
+            color:rgb(35, 21, 136);
+        }
+    </style>
+</head>
+<body> 
+    <script>
+        const geolocation = navigator.geolocation;
+        let lat = getCurrentPosition((position) => {
+            let lat = position.coords.latitude;
+            let long = position.coords.longitude;
+            console.log(lat, long)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media dos Alunos</title>
+    <style>
+        body { 
+            background: rgb(0, 254, 237);
+            color:rgb(252, 0, 0);
+            font: 12pt Arial; 
+    }
+        button { 
+            font-size: 12pt; 
+            padding: 30px;
+            background-color:rgb(255, 255, 255); 
+    }
+    </style>
+</head>
+<body>
+    <h1>Média do Aluno</h1>
+    <button onclick="media()">Calcular média</button>
+    <section id="situacao">
+        <p>Resultado</p>
+    </section>
+
+    <script>
+    //1 – Calcule a média de diversas notas digitadas pelo usuário.
+        function media() {
+            let nom = window.prompt('Qual é o nome do aluno?') // Já que o nome não é um número e sim letras, não é preciso colocar Number() para fazer a covnersão
+            let nota1 = Number(window.prompt(`Digite a primeira nota de ${nom}:`))
+            let nota2 = Number(window.prompt(`Digite a segunda nota de ${nom}:`))
+            let nota3 = Number(window.prompt(`Digite a terceira nota de ${nom}:`))
+            med = (nota1 + nota2 + nota3)/3
+
+            let res = document.getElementById('situacao')
+            res.innerHTML = `<p>Calculando a média final de <strong>${nom}</strong>.</p>`
+            res.innerHTML += `<p>As notas obtidas foram <strong>${nota1}, ${nota2} e ${nota3}</strong>.</p>` // O += é necessário, pois indica um pedido de "mantenha a frase anterior, adicionando essa outra frase". Se não fosse ele, a linha anterior seria apagada.
+            res.innerHTML += `<p>A média final será <strong>${med}</strong>.</p>`
+        }
+    </script>    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro DOM</title>
+    <style>
+        body{
+            background: rgb(9, 106, 233);
+            color:rgb(250, 248, 251);
+            font: normal 19pt Arial
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+   <!-- <div>Clique em mim</div> -->
+   <div id="msg">Clique em mim</div>
+     <script>
+    /*5 elementos para fazer o DOM*/
+    /*
+    // primeiro comando
+        window.document.write('Olá, Mundo! ')
+        window.dSocument.write(window.document.charset) //é para buscar os caracteres do site e mostra-los
+        window.document.write(window.navigator.appName) // buscar configurações na página
+        window.document.write(window.document.URL)
+    /*
+    // 2 comando Por Marca
+    //2.1
+       var p1 = window.document.getElementsByTagName('p')[1] //1 pagarafo(p) é 0 e 2 é 1
+       window.document.write('Está escrito assim: ' + p1.innerText)
+    //2.2
+       var p1 = window.document.getElementsByTagName('p')[1] //1 pagarafo(p) é 0 e 2 é 1
+       p1.style.color = 'blue'
+    //2.3
+       var corpo = window.document.body
+       var p1 = window.document.getElementsByTagName('p')[0] //1 pagarafo(p) é 0 e 2 é 1
+       corpo.style.background = 'black'
+       p1.style.color = 'yellow'
+    //2.4
+       window.alert(p1.innerText)
+       document.write(p1.innerHTML) //esse comando vai deixar as palavras DOM em negrito
+    // 2.6
+       window.alert(p1.innerHTML) // mostra o alert com a frase
+    
+    //3.0 Por ID
+       var corpo = window.document.body
+       var p1 = window.document.getElementsByTagName('p')[1] //1 pagarafo(p) é 0 e 2 é 1
+       var d = window.document.getElementById('msg')
+       d.style.background = 'green'
+       d.innerText = 'Estou aguardando...'
+    //3.1
+       window.document.getElementById('msg').innerText = 'Olá Mundoros!'
+    //4.0 Por Name
+       var corpo = window.document.body
+       var p1 = window.document.getElementsByTagName('p')[0] //1 pagarafo(p) é 0 e 2 é 1
+       var d = window.document.getElementsByName('msg')[1]
+       d.innerText = 'Olá!, Mundororos'
+    //5.0 Por seletor
+       var corpo = window.document.body
+       var p1 = window.document.getElementsByTagName('p')[1] //1 pagarafo(p) é 0 e 2 é 1
+       var d = window.document.querySelector('div#msg') // OBS.: quando for ID é #, quando é class .
+       d.style.color = 'blue'
+       d.style.background = 'red'
+    */
+    </script> 
+</body>
+</html>

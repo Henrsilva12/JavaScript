@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior e Menor</title><!-- Peça ao usuário para digitar 5 números em uma caixa de texto. Verifique qual é o maior número e exiba-o.-->
+    <style>
+        body {
+            background: rgb(255, 0, 170);
+            color:rgb(0, 0, 0);
+            font: 12pt Arial; 
+    }
+        button { 
+            font-size: 12pt; 
+            padding: 30px;
+            background-color:rgb(255, 255, 255); 
+    } 
+    </style>
+</head>
+<body>
+        <h1>Maior número</h1>
+        <input type="number" name="txtn1" id="txtn1">
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="number" name="txtn3" id="txtn3">
+        <input type="number" name="txtn4" id="txtn4">
+        <input type="number" name="txtn5" id="txtn5">
+        <inout type="button" value="verificar" onclick="verificar()"></inout>
+        <div id="res">Resultado</div>
+        <script>
+              function verificar() {
+                    let num1 = window.document.getElementById('txtn1')
+                    let num2 = window.document.getElementById('txtn2')
+                    let num3 = window.document.getElementById('txtn3')
+                    let num4 = window.document.getElementById('txtn4')
+                    let num5 = window.document.getElementById('txtn5')
+                    let res = windoe.document.getElementById('res')
+
+                    if(num1 > num2) {
+                        res.innerHTML += `<p>O número <strong> ${num1} </strong> é maior que o número <strong> ${num2} </strong><p>`
+                    } else if(num1 > num3) {
+                        res.innerHTML += `<p>O número <strong> ${num1} </strong> é maior que o número <strong> ${num3} </strong><p>`
+                    } else if (num1 > num4 && num1 > num5) {
+                        res.innerHTML += `<p>O número <strong> ${num1} </strong> é maior que o número <strong> ${num4} e maior que o número ${num5} </strong><p>`
+                    } else if(num2 > num1) {
+                        res.innerHTML += `<p>O número <strong> ${num2} </strong> é maior que o número <strong> ${num1} </strong><p>`
+                    } else if(num2 > num3) {
+                        res.innerHTML += `<p>O número <strong> ${num2} </strong> é maior que o número <strong> ${num3} </strong><p>`
+                    } else if (num2 > num4 && num2 > num5) {
+                        res.innerHTML += `<p>O número <strong> ${num2} </strong> é maior que o número <strong> ${num4} e maior que o número ${num5} </strong><p>`
+                    } else if(num3 > num1) {
+                        res.innerHTML += `<p>O número <strong> ${num3} </strong> é maior que o número <strong> ${num1} </strong><p>`
+                    } else if(num3 > num2) {
+                        res.innerHTML += `<p>O número <strong> ${num3} </strong> é maior que o número <strong> ${num2} </strong><p>`
+                    } else if (num3 > num4 && num3 > num5) {
+                        res.innerHTML += `<p>O número <strong> ${num3} </strong> é maior que o número <strong> ${num4} e maior que o número ${num5} </strong><p>`
+                    } else if(num4 > num1) {
+                        res.innerHTML += `<p>O número <strong> ${num4} </strong> é maior que o número <strong> ${num1} </strong><p>`
+                    } else if(num4 > num2) {
+                        res.innerHTML += `<p>O número <strong> ${num4} </strong> é maior que o número <strong> ${num3} </strong><p>`
+                    } else if (num4 > num3 && num4 > num5) {
+                        res.innerHTML += `<p>O número <strong> ${num4} </strong> é maior que o número <strong> ${num3} e maior que o número ${num5} </strong><p>`
+                    } else if(num5 > num1) {
+                        res.innerHTML += `<p>O número <strong> ${num5} </strong> é maior que o número <strong> ${num1} </strong><p>`
+                    } else if(num5 > num2) {
+                        res.innerHTML += `<p>O número <strong> ${num5} </strong> é maior que o número <strong> ${num2} </strong><p>`
+                    } else if (num5 > num3 && num1 > num4) {
+                        res.innerHTML += `<p>O número <strong> ${num5} </strong> é maior que o número <strong> ${num3} e maior que o número ${num4} </strong><p>`
+                    }
+            }
+        </script>
+            <script>
+            </script>
+</body>
+</html>

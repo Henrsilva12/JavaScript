@@ -1,0 +1,36 @@
+.game {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: rgb(242, 255, 0); /*cor do fundo*/
+    color:black;
+    border: 6px solid  rgb(0, 0, 0);
+    border-radius: 10px;
+    display: grid; /*espaçamento entre os números*/
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr); /* aqui vai deixar os números de  maneira que fica igual ao jogo da velha*/
+}
+
+.game > div {
+    border: 5px solid rgb(0, 0, 0); /*a cor da borda*/
+    border-radius: 2px;
+    font-family: Helvetica;
+    font-weight: bold; /*deixa os números em negrito*/
+    font-size: 4em; /*números maiores*/
+    display: flex;
+    justify-content: center; /*centralizou os números*/
+    align-items: center;
+}
+/*footer{
+    
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font: normal 18pt Arial italic;
+}
+  #reiniciar {
+    margin-top: 2%;
+    text-align: center;
+    width: 10wv;
+    font-size: 1em;
+    color: black;
+}*/
